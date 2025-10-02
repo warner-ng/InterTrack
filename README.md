@@ -88,6 +88,10 @@ To run test on more BEHAVE sequences, you will need to download [this packed fil
 Coming soon... 
 
 ## Evaluation
+Some notes regarding reproducing the results in paper:
+- GT translation was used to run HDM (first stage in InterTrack). This is the same protocol as prior works PC2 and HDM. Because single view reconstruction has the inherent depth-scale ambiguity, with the unordered point cloud as output, it is difficult to align it with GT points to compute meaningful numbers. So we simply follow previous works to use GT translation, removing at least the depth ambiguity and focus on shape evaluation. If your work does not use GT translation, there are two possible ways to setup InterTrack for a potentially more fair comparison: Run InterTrack with estimated 2d translation, following [this script](https://github.com/xiexh20/InterTrack/blob/main/scripts/demo_phone.sh), and then you can do either 1). align with GT using the SMPL vertices, or 2). use pure ICP. 
+- Pose estimation: we provide two pretrained checkpoints for object pose (step 4), see [download models](https://github.com/xiexh20/InterTrack/blob/main/download_models.py#L19-L22), the `TOPNet-5obj.pth` is for BEHAVE and InterCap chairs, tables and monitor, all other objects should use the other checkpoint `TOPNet-small-objs.pth`. 
+
 Run test on the full behave dataset: coming soon...
 
 
