@@ -167,3 +167,35 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Project specific
+outputs/
+wandb/
+runs/
+.wandb/
+*.pth
+*.pt
+*.npz
+*.npy
+*.pkl
+.DS_Store
+Thumbs.db
+
+# 视频和大型媒体文件
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.zip
+
+# 下载的模型和数据
+smplh_models/
+mano_v1_2.zip
+
+# 生成的可视化
+demo-data/*/frames/vis_*.jpg
+demo-data/*/frames/vis_*.png
+
+# 转换后的运动数据
+carrying_bike_*.pkl
+carrying_bike_*.npz

@@ -3,8 +3,8 @@ some constants for smpl and smplh models
 created by Xianghui, 12, January, 2022
 """
 
-SMPL_ASSETS_ROOT="/home/ubuntu/efs/static/demo-data/assets"
-SMPL_MODEL_ROOT="/home/ubuntu/efs/static/smplh"
+SMPL_ASSETS_ROOT="/home/warner/demo-data/assets"
+SMPL_MODEL_ROOT="/home/warner/_projects/InterTrack/smplh_models"
 
 # related to smpl and smplh parameter count
 SMPL_POSE_PRAMS_NUM = 72
